@@ -1,0 +1,9 @@
+{
+    "haeKaikki": ["SELECT A.nimi artisti_nimi, F.nimi festivaali_nimi, K.nimi kaupunki_nimi, F.paivamaara FROM artistit A, festivaalit F, kaupungit k, keikat WHERE A.id = keikat.artistit_id AND F.id = keikat.festivaalit_id AND K.id = keikat.kaupungit_id GROUP BY A.nimi"],
+    "haeArtistit": ["SELECT A.nimi FROM artistit A, festivaalit F, keikat K WHERE F.id = K.festivaalit_id AND A.id = K.artistit_id AND F.nimi = ?"],
+    "haeKaikkiArtistit": ["SELECT * FROM artistit"],
+    "haeFestivaalit": ["SELECT * FROM festivaalit"],
+    "haeFestivaali": ["SELECT A.nimi artisti_nimi, F.nimi festivaali_nimi, K.nimi kaupunki_nimi, F.paivamaara FROM artistit A, festivaalit F, kaupungit K, keikat WHERE A.id = keikat.artistit_id AND F.id = keikat.festivaalit_id AND K.id = keikat.kaupungit_id AND F.nimi = ?"],
+    "haeKaupunki": ["SELECT K.nimi, F.paivamaara FROM kaupungit K, festivaalit F WHERE K.id = F.id AND F.nimi = ?"],
+    "haeKaupungit": ["SELECT * FROM kaupungit"]
+}

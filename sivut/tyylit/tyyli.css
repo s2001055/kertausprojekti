@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: whitesmoke;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: #373435;
+    height: 70px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: 500;
+}
+
+.nav-links li a:hover {
+    color: #20aad8;
+    transition: 0.3s;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tiedot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 50%;
+}
+
+.tiedot a,
+.tiedot p {
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.tiedot a:hover,
+.tiedot p:hover {
+    border: 1px solid #20aad8;
+    cursor: pointer;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+.festivaali {
+    margin-top: 100px;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.festivaali h2 {
+    display: flex;
+    color: #373435;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+.festivaali h3 {
+    display: flex;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#paivamaara {
+    margin-bottom: 20px;
+}
+
+#artisti {
+    font-size: 14px;
+    margin-top: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+.festivaali p {
+    display: flex;
+    font-weight: lighter;
+    color: #373435;
+}
+
+.takaisin {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.takaisin a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #373435;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.takaisin a:hover {
+    border: 1px solid #20aad8;
+}

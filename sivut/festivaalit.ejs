@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./tyylit/tyyli.css">
+        <title>Kotisivu</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="nav-links">
+                    <li>
+                        <a href="/">Kotisivu</a>
+                    </li>
+
+                    <li>
+                        <a href="/artistit">Artistit</a>
+                    </li>
+
+                    <li>
+                        <a href="/kaupungit">Kaupungit</a>
+                    </li>
+
+                    <!-- <li>
+                        <a href="/festivaalit">Festivaalit</a>
+                    </li> -->
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+            <% festivaalit.forEach(festivaali => { %>
+                <div class="festivaalit"></div>
+                    <h2><%= festivaali.festivaali_nimi %> - <%= festivaali.kaupunki_nimi %></h2>
+                    <p id="paivamaara"><%= festivaali.paivamaara %></p>
+    
+                    <h3>Esiintyjät</h3>
+                    <p><%= festivaali.artisti_nimi %></p>
+                </div>
+            <% }) %>
+        </div>
+    </body>
+</html>

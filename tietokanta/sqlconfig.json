@@ -1,0 +1,7 @@
+{
+    "host": "localhost",
+    "user": "root",
+    "database": "kertauskanta",
+    "password": "",
+    "port": 3306
+}

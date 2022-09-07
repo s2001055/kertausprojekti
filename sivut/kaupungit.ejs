@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./tyylit/tyyli.css">
+        <title>Kaupungit</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="nav-links">
+                    <li>
+                        <a href="/">Kotisivu</a>
+                    </li>
+
+                    <li>
+                        <a href="/artistit">Artistit</a>
+                    </li>
+
+                    <li>
+                        <a href="/kaupungit">Kaupungit</a>
+                    </li>
+
+                    <!-- <li>
+                        <a href="/festivaalit">Festivaalit</a>
+                    </li> -->
+                </ul>
+            </nav>
+        </header>
+
+        <h1>Festivaalien kaupungit</h1>
+
+        <div class="container">
+            <div class="tiedot">
+                <% kaupungit.forEach(kaupunki => { %>
+                    <p><%= kaupunki.nimi %></p>
+                <% }); %>
+            </div>
+        </div>
+    </body>
+</html>
